@@ -1,5 +1,5 @@
-//https://newsapi.org/v2/top-headlines?country=in&apiKey=65a442cf229849a78ab4a21a24fb8a16
-let API_KEY = '65a442cf229849a78ab4a21a24fb8a16';
+let API_KEY1 = '65a442cf229849a78ab4a21a24fb8a16';
+let API_KEY2 = '3df4d2f4fb954aa5a618a35bb95af808';
 let cards = document.getElementById('cards');
 // grab the news container
 function load(){
@@ -8,9 +8,9 @@ function load(){
     if(cat === undefined){
         cat = 'general';
     }
-    console.log("hello user , checking console....wont help but following me will help. hehe");
+    console.log("hello user , checking console....won't help but following me will help. hehe");
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=${source}&category=${cat}&apiKey=${API_KEY}`, true);
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=${source}&category=${cat}&apiKey=${API_KEY2}`, true);
 //what to do when response is ready
 xhr.onload = function () {
     if (this.status === 200) {
