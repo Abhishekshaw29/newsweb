@@ -41,6 +41,7 @@ cards.innerHTML = newHtml;
 }
     else {
         console.log("some error occured");
+        API_KEY2 = API_KEY1;
     }
 }
 xhr.send();
